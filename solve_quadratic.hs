@@ -1,5 +1,9 @@
 module Solve_Quadratic
     where
 
-solve_quadratic :: Float -> Float -> Float -> (Float -> Float)
-solve_quadratic a b c = (0.0, 0.0)
+solve_quadratic :: Float -> Float -> Float -> (Float->Float)
+solve_quadratic a b c = (x1, x2)
+    where
+        x1 = (-b - sqrt delta) / (2*a)
+        x2 = (-b + sqrt delta) / (2*a)
+        delta = b*b - 4*a*c  
