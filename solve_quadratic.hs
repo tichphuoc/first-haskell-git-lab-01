@@ -1,3 +1,4 @@
+-- exe01: submitted by Tich Phuoc
 module Solve_Quadratic
     where
 
