@@ -1,9 +1,9 @@
--- exe01: submitted by Tich Phuoc
+-- exe02: submitted by Tich Phuoc
 module Solve_Quadratic
     where
 
-solve_quadratic :: Float -> Float -> Float -> (Float, Float)
-solve_quadratic a b c = (x1, x2)
+solve_quadratic :: Float -> Float -> Float -> Float
+solve_quadratic a b c = max x1 x2
     where
         x1 = (-b - sqrt delta) / (2*a)
         x2 = (-b + sqrt delta) / (2*a)
